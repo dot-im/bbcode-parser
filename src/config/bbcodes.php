@@ -32,7 +32,7 @@ return  [
     ],
 
     'color' => [
-        'pattern' => '/\[color\=(#[A-f0-9]{6}|#[A-f0-9]{3})\](.*?)\[\/color\]/s',
+        'pattern' => '/\[color\=(.*?)\](.*?)\[\/color\]/s',
         'replace' => '<span style="color: $1;">$2</span>',
         'content' => '$2',
     ],
